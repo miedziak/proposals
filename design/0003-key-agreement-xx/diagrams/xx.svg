@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="880px" height="600px" viewBox="0 0 880 600" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="880px" height="660px" viewBox="0 0 880 660" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 61.2 (89653) - https://sketch.com -->
     <title>Custom Preset</title>
     <desc>Created with Sketch.</desc>
     <g id="Custom-Preset" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <rect fill="#FFFFFF" x="0" y="0" width="880" height="600"></rect>
-        <path id="Line" d="M411.498932,83.4989333 L411.499999,84.4989328 L411.985,538.998 L417.985055,538.992537 L411,553 L403.985063,539.007479 L409.985,539.001 L409.500001,84.5010672 L409.498933,83.5010678 L411.498932,83.4989333 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
-        <path id="Line" d="M741,83 L741,539 L747,539 L740,553 L733,539 L739,539 L739,83 L741,83 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
-        <path id="Line-2" d="M419.710379,143.326757 L420.691811,143.518568 L713.951,200.833 L715.102629,194.944625 L727.5,204.5 L712.417277,208.684672 L713.568,202.796 L420.308189,145.481432 L419.326757,145.289621 L419.710379,143.326757 Z" fill="#CF6351" fill-rule="nonzero"></path>
-        <path id="Line-2" d="M419.710379,256.326757 L420.691811,256.518568 L713.951,313.833 L715.102629,307.944625 L727.5,317.5 L712.417277,321.684672 L713.568,315.796 L420.308189,258.481432 L419.326757,258.289621 L419.710379,256.326757 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
-        <path id="Line-2" d="M728.415536,217.422135 L728.577865,219.415536 L727.581165,219.496701 L434.534,243.36 L435.021962,249.340601 L420.5,243.5 L433.885658,235.386791 L434.372,241.366 L727.418835,217.503299 L728.415536,217.422135 Z" fill="#D6804D" fill-rule="nonzero"></path>
-        <text id="Message-A" transform="translate(614.811297, 169.459760) rotate(11.000000) translate(-614.811297, -169.459760) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#CF6351">
-            <tspan x="583.811297" y="173.95976">Message A</tspan>
+        <rect fill="#FFFFFF" x="0" y="0" width="880" height="660"></rect>
+        <path id="Line" d="M411.498932,108.498933 L411.499999,109.498933 L411.985,563.998 L417.985055,563.992537 L411,578 L403.985063,564.007479 L409.985,564.001 L409.500001,109.501067 L409.498933,108.501068 L411.498932,108.498933 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
+        <path id="Line" d="M741,108 L741,564 L747,564 L740,578 L733,564 L739,564 L739,108 L741,108 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
+        <path id="Line-2" d="M419.710379,168.326757 L420.691811,168.518568 L713.951,225.833 L715.102629,219.944625 L727.5,229.5 L712.417277,233.684672 L713.568,227.796 L420.308189,170.481432 L419.326757,170.289621 L419.710379,168.326757 Z" fill="#CF6351" fill-rule="nonzero"></path>
+        <path id="Line-2" d="M419.710379,281.326757 L420.691811,281.518568 L713.951,338.833 L715.102629,332.944625 L727.5,342.5 L712.417277,346.684672 L713.568,340.796 L420.308189,283.481432 L419.326757,283.289621 L419.710379,281.326757 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
+        <path id="Line-2" d="M728.415536,242.422135 L728.577865,244.415536 L727.581165,244.496701 L434.534,268.36 L435.021962,274.340601 L420.5,268.5 L433.885658,260.386791 L434.372,266.366 L727.418835,242.503299 L728.415536,242.422135 Z" fill="#D6804D" fill-rule="nonzero"></path>
+        <text id="Message-A" transform="translate(614.811297, 194.459760) rotate(11.000000) translate(-614.811297, -194.459760) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#CF6351">
+            <tspan x="583.811297" y="198.95976">Message A</tspan>
         </text>
-        <text id="Message-C" transform="translate(614.811297, 282.459760) rotate(11.000000) translate(-614.811297, -282.459760) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
-            <tspan x="583.811297" y="286.95976">Message C</tspan>
+        <text id="Message-C" transform="translate(614.811297, 307.459760) rotate(11.000000) translate(-614.811297, -307.459760) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
+            <tspan x="583.811297" y="311.95976">Message C</tspan>
         </text>
-        <text id="Message-B" transform="translate(497.199367, 223.252778) rotate(-4.500000) translate(-497.199367, -223.252778) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#D6804D">
-            <tspan x="467.199367" y="227.752778">Message B</tspan>
+        <text id="Message-B" transform="translate(497.199367, 248.252778) rotate(-4.500000) translate(-497.199367, -248.252778) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#D6804D">
+            <tspan x="467.199367" y="252.752778">Message B</tspan>
         </text>
         <text id="Handshake-Phase" font-family="Futura-Medium, Futura" font-size="16" font-weight="400" fill="#3D7B3B">
-            <tspan x="89" y="202">Handshake Phase</tspan>
+            <tspan x="89" y="227">Handshake Phase</tspan>
         </text>
         <text id="Data-Phase" font-family="Futura-Medium, Futura" font-size="16" font-weight="400" fill="#3D7B3B">
-            <tspan x="89" y="428">Data Phase</tspan>
+            <tspan x="89" y="453">Data Phase</tspan>
         </text>
-        <path id="Line-2" d="M419.710379,436.326757 L420.691811,436.518568 L713.951,493.833 L715.102629,487.944625 L727.5,497.5 L712.417277,501.684672 L713.568,495.796 L420.308189,438.481432 L419.326757,438.289621 L419.710379,436.326757 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
-        <path id="Line-2" d="M728.415536,397.422135 L728.577865,399.415536 L727.581165,399.496701 L434.534,423.36 L435.021962,429.340601 L420.5,423.5 L433.885658,415.386791 L434.372,421.366 L727.418835,397.503299 L728.415536,397.422135 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
-        <text id="Message-E" transform="translate(613.829669, 462.268951) rotate(11.000000) translate(-613.829669, -462.268951) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
-            <tspan x="583.829669" y="466.768951">Message E</tspan>
+        <path id="Line-2" d="M419.710379,461.326757 L420.691811,461.518568 L713.951,518.833 L715.102629,512.944625 L727.5,522.5 L712.417277,526.684672 L713.568,520.796 L420.308189,463.481432 L419.326757,463.289621 L419.710379,461.326757 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
+        <path id="Line-2" d="M728.415536,422.422135 L728.577865,424.415536 L727.581165,424.496701 L434.534,448.36 L435.021962,454.340601 L420.5,448.5 L433.885658,440.386791 L434.372,446.366 L727.418835,422.503299 L728.415536,422.422135 Z" fill="#3D7B3B" fill-rule="nonzero"></path>
+        <text id="Message-E" transform="translate(613.829669, 487.268951) rotate(11.000000) translate(-613.829669, -487.268951) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
+            <tspan x="583.829669" y="491.768951">Message E</tspan>
         </text>
-        <text id="Message-D" transform="translate(498.196285, 403.174319) rotate(-4.500000) translate(-498.196285, -403.174319) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
-            <tspan x="467.196285" y="407.674319">Message D</tspan>
+        <text id="Message-D" transform="translate(498.196285, 428.174319) rotate(-4.500000) translate(-498.196285, -428.174319) " font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
+            <tspan x="467.196285" y="432.674319">Message D</tspan>
         </text>
-        <g id="Group" transform="translate(333.000000, 42.000000)">
+        <g id="Group" transform="translate(333.000000, 67.000000)">
             <rect id="Rectangle" stroke="#3D7B3B" stroke-width="2" x="1" y="1" width="151" height="40"></rect>
             <text id="Initiator" font-family="Futura-Medium, Futura" font-size="16" font-weight="400" fill="#3D7B3B">
                 <tspan x="49" y="28">Initiator</tspan>
             </text>
         </g>
-        <g id="Group" transform="translate(359.000000, 342.000000)">
+        <g id="Group" transform="translate(359.000000, 367.000000)">
             <rect id="Rectangle" stroke="#3D7B3B" fill="#FFFFFF" x="0.5" y="0.5" width="103" height="32"></rect>
             <rect id="Rectangle" stroke="#3D7B3B" fill="#FFFFFF" x="0.5" y="0.5" width="103" height="32"></rect>
             <text id="Shared-Secret" font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
                 <tspan x="14" y="21">Shared Secret</tspan>
             </text>
         </g>
-        <g id="Group" transform="translate(688.000000, 342.000000)">
+        <g id="Group" transform="translate(688.000000, 367.000000)">
             <rect id="Rectangle" stroke="#3D7B3B" fill="#FFFFFF" x="0.5" y="0.5" width="103" height="32"></rect>
             <rect id="Rectangle" stroke="#3D7B3B" fill="#FFFFFF" x="0.5" y="0.5" width="103" height="32"></rect>
             <text id="Shared-Secret" font-family="Futura-Medium, Futura" font-size="12" font-weight="400" fill="#3D7B3B">
                 <tspan x="14" y="21">Shared Secret</tspan>
             </text>
         </g>
-        <g id="Group-2" transform="translate(663.000000, 42.000000)">
+        <g id="Group-2" transform="translate(663.000000, 67.000000)">
             <rect id="Rectangle" stroke="#3D7B3B" stroke-width="2" x="1" y="1" width="151" height="40"></rect>
             <text id="Responder" font-family="Futura-Medium, Futura" font-size="16" font-weight="400" fill="#3D7B3B">
                 <tspan x="38" y="28">Responder</tspan>

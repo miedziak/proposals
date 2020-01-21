@@ -29,12 +29,236 @@ __data messages__.
 
 The two participating entities are called __Initiator__ and __Responder__:
 
-__Initiator__: The entity that initiates the key agreement protocol by
+- __Initiator__: The entity that initiates the key agreement protocol by
 sending the first message (Message A).\
-__Responder__: The entity that responds to the initiator's message with
+- __Responder__: The entity that responds to the initiator's message with
 the second message (Message B).
 
 ![Key Agreement Protocol Diagram](./diagrams/xx.svg)
+
+
+```
+Initiator                                 |   Responder
+------------------------------------------|----------------------------------------
+
+
+Message A (Send)
+-> e
+
+1. Pick a static 25519 keypair for
+this handshake and set it to s
+
+2. Generate an ephemeral 25519
+keypair for this handshake and set
+it to e
+
+3. Set k to empty, Set n to 0
+
+4. Set h and ck to
+'Noise_XX_25519_AESGCM_SHA256'
+
+5. h = SHA256(h || prologue),
+prologue is empty
+
+6. h = SHA256(h || e.PublicKey),
+Write e.PublicKey to outgoing message
+buffer, BigEndian
+
+7. h = SHA256(h || payload),
+payload is empty
+
+
+------------------------------------------|----------------------------------------
+
+
+                                                Message A (Receive)
+                                                -> e
+
+                                                1. Pick a static 25519 keypair for
+                                                this handshake and set it to s
+
+                                                2. Generate an ephemeral 25519
+                                                keypair for this handshake and set
+                                                it to e
+
+                                                3. Set k to empty, Set n to 0
+
+                                                4. Set h and ck to
+                                                'Noise_XX_25519_AESGCM_SHA256'
+
+                                                5. h = SHA256(h || prologue),
+                                                prologue is empty
+
+                                                6. Read 32 bytes from the incoming
+                                                message buffer, parse it as a public
+                                                key, set it to re
+                                                h = SHA256(h || re)
+
+                                                7. read remaining message as payload
+                                                h = SHA256(h || payload),
+                                                payload should be empty
+
+
+------------------------------------------|----------------------------------------
+
+
+                                                Message B (Send)
+                                                <- e, ee, s, es
+
+                                                1. h = SHA256(h || e.PublicKey),
+                                                Write e.PublicKey to outgoing message
+                                                buffer, BigEndian
+
+                                                2. ck, k = HKDF(ck, DH(e, re), 2)
+                                                n = 0
+
+                                                3. c = ENCRYPT(k, n++, h, s.PublicKey)
+                                                h =  SHA256(h || c),
+                                                Write c to outgoing message
+                                                buffer, BigEndian
+
+                                                4. ck, k = HKDF(ck, DH(s, re), 2)
+                                                n = 0
+
+                                                5. c = ENCRYPT(k, n++, h, payload)
+                                                h = SHA256(h || c),
+                                                payload is empty
+
+------------------------------------------|----------------------------------------
+
+
+Message B (Receive)
+<- e, ee, s, es
+
+1. Read 32 bytes from the incoming
+message buffer, parse it as a public
+key, set it to re
+h = SHA256(h || re)
+
+2. ck, k = HKDF(ck, DH(e, re), 2)
+n = 0
+
+3. Read 48 bytes the incoming
+message buffer as c
+p = DECRYPT(k, n++, h, c)
+h = SHA256(h || c),
+parse p as a public key,
+set it to rs
+
+4. ck, k = HKDF(ck, DH(e, rs), 2)
+n = 0
+
+5. Read remaining bytes of incoming
+message buffer as c
+p = DECRYPT(k, n++, h, c)
+h = SHA256(h || c),
+parse p as a payload,
+payload should be empty
+
+
+------------------------------------------|----------------------------------------
+
+
+Message C (Send)
+-> s, se
+
+1. c = ENCRYPT(k, n++, h, s.PublicKey)
+h =  SHA256(h || c),
+Write c to outgoing message
+buffer, BigEndian
+
+2. ck, k = HKDF(ck, DH(s, re), 2)
+n = 0
+
+3. c = ENCRYPT(k, n++, h, payload)
+h = SHA256(h || c),
+payload is empty
+
+
+------------------------------------------|----------------------------------------
+
+
+                                                Message C (Receive)
+                                                -> s, se
+
+                                                1. Read 48 bytes the incoming
+                                                message buffer as c
+                                                p = DECRYPT(k, n++, h, c)
+                                                h = SHA256(h || c),
+                                                parse p as a public key,
+                                                set it to rs
+
+                                                2.ck, k = HKDF(ck, DH(e, rs), 2)
+                                                n = 0
+
+                                                3. Read remaining bytes of incoming
+                                                message buffer as c
+                                                p = DECRYPT(k, n++, h, c)
+                                                h = SHA256(h || c),
+                                                parse p as a payload,
+                                                payload should be empty
+
+
+------------------------------------------|----------------------------------------
+
+
+                                                1. k1, k2 = HKDF(ck, zerolen, 2)
+                                                n1 = 0, n2 = 0
+                                                Use (k1, n1) to encrypt outgoing
+                                                Use (k2, n2) to decrypt incoming
+
+1. k1, k2 = HKDF(ck, zerolen, 2)
+n1 = 0, n2 = 0
+Use (k1, n1) to decrypt incoming
+Use (k2, n2) to encrypt outgoing
+
+```
+
+
+
+## Message A
+
+Message A, sent by the initiator, does not benefit from sender authentication
+and does not provide message integrity. It could have been sent by any party,
+including an active attacker. Message contents do not benefit from message secrecy
+even against a purely passive attacker and any forward secrecy is out of the question.
+
+## Message B
+
+Message B, sent by the responder, benefits from sender authentication and is
+resistant to Key Compromise Impersonation. Assuming the corresponding private keys
+are secure, this authentication cannot be forged. However, if the responder carries
+out a separate session with a separate, compromised initiator, this other session
+can be used to forge the authentication of this message with this session's initiator.
+Message contents benefit from some message secrecy and some forward secrecy, but not
+sufficiently to resist any active attacker.
+
+## Message C
+
+Message C, sent by the initiator, benefits from sender and receiver authentication
+and is resistant to Key Compromise Impersonation. Assuming the corresponding private
+keys are secure, this authentication cannot be forged. Message contents benefit from
+message secrecy and strong forward secrecy: if the ephemeral private keys are secure
+and the responder is not being actively impersonated by an active attacker, message
+contents cannot be decrypted.
+
+## Message D
+
+Message D, sent by the responder, benefits from sender and receiver authentication
+and is resistant to Key Compromise Impersonation. Assuming the corresponding private
+keys are secure, this authentication cannot be forged. Message contents benefit from
+message secrecy and strong forward secrecy: if the ephemeral private keys are secure
+and the initiator is not being actively impersonated by an active attacker, message
+contents cannot be decrypted.
+
+## Message E
+
+Message E, sent by the initiator, benefits from sender and receiver authentication
+and is resistant to Key Compromise Impersonation. Assuming the corresponding private
+keys are secure, this authentication cannot be forged. Message contents benefit from
+message secrecy and strong forward secrecy: if the ephemeral private keys are secure
+and the responder is not being actively impersonated by an active attacker, message
+contents cannot be decrypted.
 
 ## References
 
