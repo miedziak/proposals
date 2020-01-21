@@ -112,7 +112,8 @@ payload is empty
                                                 Write c to outgoing message
                                                 buffer, BigEndian
 
-                                                4. MixKey(DH(s, re))
+                                                4. ck, k = HKDF(ck, DH(s, re), 2)
+                                                n = 0
 
                                                 5. c = ENCRYPT(k, n++, h, payload)
                                                 h = SHA256(h || c),

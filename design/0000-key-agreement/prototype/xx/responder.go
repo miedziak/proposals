@@ -224,7 +224,7 @@ func xxRespond(transport prototype.Transport) (err error) {
 		return err
 	}
 
-	// 2. ck, k = HKDF(ck, DH(s, re), 2)
+	// 4. ck, k = HKDF(ck, DH(s, re), 2)
 	// n = 0
 	k1, k2, err = Kdf(handshake.ck, handshake.s.ComputeSharedSecret(handshake.re))
 	if err != nil {
@@ -235,7 +235,7 @@ func xxRespond(transport prototype.Transport) (err error) {
 	handshake.n = 0
 
 
-	// 3. c = ENCRYPT(k, n++, h, payload)
+	// 5. c = ENCRYPT(k, n++, h, payload)
 	// h = SHA256(h || c),
 	// payload is empty
 	payload = []byte{}
