@@ -1,6 +1,7 @@
 ```yaml
-Name: Ockam Proposal 0001
-Status: Draft
+id: OP-0001
+title: Proposal Process
+status: Draft
 ```
 
 # Proposal Process

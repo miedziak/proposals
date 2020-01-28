@@ -1,6 +1,7 @@
 ```yaml
-Name: Ockam Proposal 0003
-Status: Draft
+id: OP-0003
+title: Key Agreement - XX
+status: Draft
 ```
 
 # Key Agreement - XX

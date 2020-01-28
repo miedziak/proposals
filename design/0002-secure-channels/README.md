@@ -1,6 +1,7 @@
 ```yaml
-Name: Ockam Proposal 0002
-Status: Draft
+id: OP-0002
+title: Secure Channels
+status: Draft
 ```
 
 # Secure Channels
