@@ -264,23 +264,23 @@ contents cannot be decrypted.
 ## References
 
 1. <span id="reference-1"></span>Perrin, T., The Noise Protocol Framework. <br/>
-[https://github.com/noiseprotocol/noise_spec/blob/v34/output/noise.pdf](https://github.com/noiseprotocol/noise_spec/blob/v34/output/noise.pdf)
+https://github.com/noiseprotocol/noise_spec/blob/v34/output/noise.pdf
 
 2. <span id="reference-2"></span>Krawczyk, H., SIGMA: The ‘SIGn-and-MAc’ approach
 to authenticated Diffie-Hellman and its use in the IKE protocols. <br/>
-[https://link.springer.com/content/pdf/10.1007/978-3-540-45146-4_24.pdf](https://link.springer.com/content/pdf/10.1007/978-3-540-45146-4_24.pdf)
+https://link.springer.com/content/pdf/10.1007/978-3-540-45146-4_24.pdf
 
 3. <span id="reference-3"></span>Marlinspike, M. and Perrin, T.,
 The X3DH Key Agreement Protocol. <br/>
-[https://signal.org/docs/specifications/x3dh/x3dh.pdf](https://signal.org/docs/specifications/x3dh/x3dh.pdf)
+https://signal.org/docs/specifications/x3dh/x3dh.pdf
 
 4. <span id="reference-4"></span>Kobeissi, N., Nicolas, G. and Bhargavan, K.,
 Noise Explorer: Fully Automated Modeling and Verification for Arbitrary Noise Protocols. <br/>
-[https://ia.cr/2018/766](https://ia.cr/2018/766)
+https://ia.cr/2018/766
 
 5. <span id="reference-5"></span>Girol, G., Formalizing and verifying the security
 protocols from the Noise framework. <br/>
-[https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/information-security-group-dam/research/software/noise_suter-doerig.pdf](https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/information-security-group-dam/research/software/noise_suter-doerig.pdf)
+https://ethz.ch/content/dam/ethz/special-interest/infk/inst-infsec/information-security-group-dam/research/software/noise_suter-doerig.pdf
 
 6. <span id="reference-6"></span>IETF, The Transport Layer Security (TLS) Protocol Version 1.3 <br/>
-[https://tools.ietf.org/html/rfc8446](https://tools.ietf.org/html/rfc8446)
+https://tools.ietf.org/html/rfc8446

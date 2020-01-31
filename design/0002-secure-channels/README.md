@@ -22,4 +22,4 @@ later time.
 
 1. <span id="reference-1"></span>Canetti, R. and Krawczyk, H.,
 Analysis of Key-Exchange Protocols and Their Use for Building Secure Channels. <br/>
-[https://ia.cr/2001/040](https://ia.cr/2001/040)
+https://ia.cr/2001/040
