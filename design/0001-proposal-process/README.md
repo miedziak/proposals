@@ -19,11 +19,11 @@ We’re discussing the process in the following Github issues: [#1](https://gith
 
 ## References
 
-[<span id="ref1">1</span>]: Rust RFCs\
-https://github.com/rust-lang/rfcs
+1. <span id="reference-1"></span>Rust RFCs. <br/>
+[https://github.com/rust-lang/rfcs](https://github.com/rust-lang/rfcs)
 
-[<span id="ref2">2</span>]: Python Enhancement Proposal Process\
-https://www.python.org/dev/peps/pep-0001
+2. <span id="reference-2"></span>Python Enhancement Proposal Process. <br/>
+[https://www.python.org/dev/peps/pep-0001](https://www.python.org/dev/peps/pep-0001)
 
-[<span id="ref3">3</span>]: Scala Improvement Process\
-https://docs.scala-lang.org/sips/sip-submission.html
+3. <span id="reference-3"></span>Scala Improvement Process. <br/>
+[https://docs.scala-lang.org/sips/sip-submission.html](https://docs.scala-lang.org/sips/sip-submission.html)
