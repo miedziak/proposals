@@ -18,6 +18,14 @@ We also assume that the two communicating machines may not be online at the
 same time and messages may be cached along the route and delivered at a
 later time.
 
+## Description
+
+More details coming soon
+
+## Discussion
+
+We’re discussing the Ockam secure channels protocol in the following Github issues: [#33](https://github.com/ockam-network/proposals/issues/33)
+
 ## References
 
 1. <span id="reference-1"></span>Canetti, R. and Krawczyk, H.,

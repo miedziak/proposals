@@ -217,14 +217,14 @@ Use (k2, n2) to encrypt outgoing
 
 
 
-## Message A
+### Message A
 
 Message A, sent by the initiator, does not benefit from sender authentication
 and does not provide message integrity. It could have been sent by any party,
 including an active attacker. Message contents do not benefit from message secrecy
 even against a purely passive attacker and any forward secrecy is out of the question.
 
-## Message B
+### Message B
 
 Message B, sent by the responder, benefits from sender authentication and is
 resistant to Key Compromise Impersonation. Assuming the corresponding private keys
@@ -234,7 +234,7 @@ can be used to forge the authentication of this message with this session's init
 Message contents benefit from some message secrecy and some forward secrecy, but not
 sufficiently to resist any active attacker.
 
-## Message C
+### Message C
 
 Message C, sent by the initiator, benefits from sender and receiver authentication
 and is resistant to Key Compromise Impersonation. Assuming the corresponding private
@@ -243,7 +243,7 @@ message secrecy and strong forward secrecy: if the ephemeral private keys are se
 and the responder is not being actively impersonated by an active attacker, message
 contents cannot be decrypted.
 
-## Message D
+### Message D
 
 Message D, sent by the responder, benefits from sender and receiver authentication
 and is resistant to Key Compromise Impersonation. Assuming the corresponding private
@@ -252,7 +252,7 @@ message secrecy and strong forward secrecy: if the ephemeral private keys are se
 and the initiator is not being actively impersonated by an active attacker, message
 contents cannot be decrypted.
 
-## Message E
+### Message E
 
 Message E, sent by the initiator, benefits from sender and receiver authentication
 and is resistant to Key Compromise Impersonation. Assuming the corresponding private
@@ -260,6 +260,10 @@ keys are secure, this authentication cannot be forged. Message contents benefit 
 message secrecy and strong forward secrecy: if the ephemeral private keys are secure
 and the responder is not being actively impersonated by an active attacker, message
 contents cannot be decrypted.
+
+## Discussion
+
+We’re discussing the Ockam key agreement protocol in the following Github issues: [#32](https://github.com/ockam-network/proposals/issues/32)
 
 ## References
 

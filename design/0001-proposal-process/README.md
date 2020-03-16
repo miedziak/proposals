@@ -6,13 +6,11 @@ status: Draft
 
 # Proposal Process
 
-Ockam Proposals are design documents that would be openly discussed by the Ockam community
+Ockam Proposals are design documents that should be openly discussed by the Ockam community
 before a feature is implemented. A proposal describes the motivation for a feature along with
 a technical specification for how it could be implemented within Ockam.
 
 ## Description
-
-# Proposal Process
 
 1. The first step in creating a proposal is to create an [issue][issues] that describes the
 problem you would like to address with a feature in [ockam][ockam].
