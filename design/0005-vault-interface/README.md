@@ -8,7 +8,9 @@ status: Draft
 
 This document specifies the vault interface design
 
-The interface can be looked in two pieces, the vault interface functions and vault interface secrets. The secrets can hold a variety of keys such as elliptic curve private and public keys, shared secrets and AES keys. The vault interface functions perform a number of cryptographic operations, sometimes using the vault interface secrets.
+The interface can be looked in two pieces, the vault interface functions and vault interface secrets. The secrets can
+hold a variety of keys such as elliptic curve private and public keys, shared secrets and AES keys. The vault interface 
+functions perform a number of cryptographic operations, sometimes using the vault interface secrets.
 
 ## Description
 
@@ -212,7 +214,8 @@ ockam_error_t ockam_vault_secret_destroy(ockam_vault_t* vault, ockam_vault_secre
 
 ## Discussion
 
-We’re discussing the Ockam vault interface in the following Github issue: [#53](https://github.com/ockam-network/proposals/issues/53)
+We’re discussing the Ockam vault interface in the following Github issue:
+[#53](https://github.com/ockam-network/proposals/issues/53)
 
 ## References
 
