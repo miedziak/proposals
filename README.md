@@ -15,11 +15,13 @@ Use the following links to generate an [issue][issues], to edit, or to contribut
 | [OP-0002][OP-0002] | Secure Channels     |
 | [OP-0003][OP-0003] | Key Agreement - XX  |
 | [OP-0004][OP-0004] | Wire Protocol       |
+| [OP-0005][OP-0005] | Vault Interface     |
 
 Ockam Proposals are also available to read at [ockam.io/learn](https://www.ockam.io/learn/proposals)
 
-[OP-0001]: https://github.com/ockam-network/proposals/tree/master/design/0001-proposal-process
-[OP-0002]: https://github.com/ockam-network/proposals/tree/master/design/0002-secure-channels
-[OP-0003]: https://github.com/ockam-network/proposals/tree/master/design/0003-key-agreement-xx
-[OP-0004]: https://github.com/ockam-network/proposals/tree/master/design/0004-wire-protocol
+[OP-0001]: https://github.com/ockam-network/proposals/tree/main/design/0001-proposal-process
+[OP-0002]: https://github.com/ockam-network/proposals/tree/main/design/0002-secure-channels
+[OP-0003]: https://github.com/ockam-network/proposals/tree/main/design/0003-key-agreement-xx
+[OP-0004]: https://github.com/ockam-network/proposals/tree/main/design/0004-wire-protocol
+[OP-0005]: https://github.com/ockam-network/proposals/tree/main/design/0005-vault-interface
 [issues]: https://github.com/ockam-network/proposals/issues
