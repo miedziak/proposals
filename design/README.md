@@ -16,6 +16,8 @@ Use the following links to generate an [issue][issues], to edit, or to contribut
 | [OP-0003][OP-0003] | Key Agreement - XX  |
 | [OP-0004][OP-0004] | Wire Protocol       |
 | [OP-0005][OP-0005] | Vault Interface     |
+| [OP-0006][OP-0006] | Enrollment |
+
 
 Ockam Proposals are also available to read at [ockam.io/learn](https://www.ockam.io/learn/proposals)
 
@@ -24,4 +26,5 @@ Ockam Proposals are also available to read at [ockam.io/learn](https://www.ockam
 [OP-0003]: https://github.com/ockam-network/proposals/tree/main/design/0003-key-agreement-xx
 [OP-0004]: https://github.com/ockam-network/proposals/tree/main/design/0004-wire-protocol
 [OP-0005]: https://github.com/ockam-network/proposals/tree/main/design/0005-vault-interface
+[OP-0006]: https://github.com/ockam-network/proposals/tree/main/design/0006-enrollment
 [issues]: https://github.com/ockam-network/proposals/issues
