@@ -31,7 +31,7 @@ by the service.
 ### Setup
 
 The setup assumes a secure channel exists between the enroller and the service
-established using another method like [Noise XX Key agreement](../0003-key-agreement-xx).
+established using another method like [XX Key agreement](../0003-key-agreement-xx).
 
 To become an enroller, the service generates an enrollment bundle which consists
 of three cryptographic keys:
