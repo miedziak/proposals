@@ -1,5 +1,5 @@
 ```yaml
-title: Proposals
+title: Architecture and Protocol Design
 ```
 # Proposals Introduction
 
