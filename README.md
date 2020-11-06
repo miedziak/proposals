@@ -1,6 +1,7 @@
 ```yaml
-title: Proposals
+title: Architecture and Protocol Design
 ```
+
 # Proposals Introduction
 
 Ockam Proposals are design documents that should be openly discussed by the Ockam community
